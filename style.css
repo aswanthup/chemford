@@ -117,11 +117,19 @@ a{
  flex-direction: column;
  gap:.5vw;
   padding:1.5vw;
+  border: 1px solid rgb(255, 255, 255,0);
     border-left:.6vw solid #E51E28;
     backdrop-filter: blur(25px); 
-    color: white; 
+    color:white; 
+    transition:500ms ease-in-out;
+  
 }
 
+
+.data1:hover{
+    border: 1px solid rgba(255, 255, 255,0.5);
+    border-left:.6vw solid #E51E28;
+}
 
 
 .data1 h4{
