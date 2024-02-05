@@ -24,7 +24,7 @@ a{
 
 
     h1{
-        font-size:3rem;
+        font-size:4rem;
     }
 
     h4{
@@ -37,7 +37,15 @@ a{
         font-size:2rem;
     }
 
-
+    .popup {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 1;
+      }
 
 
 
@@ -50,6 +58,9 @@ a{
     border-radius:50px;
     justify-content: center;
     align-items:center;
+    margin:10px;
+    cursor: pointer;
+    position: relative; 
 }
 
 .navlogo i{
@@ -85,6 +96,11 @@ a{
     align-items: center;
 }
 
+.navlinks a:hover{
+    color: #E51E28;
+}
+
+
 
 .hero{
     flex-direction: column;
@@ -117,9 +133,12 @@ a{
  flex-direction: column;
  gap:.5vw;
   padding:1.5vw;
-  border: 1px solid rgb(255, 255, 255,0);
+ 
     border-left:.6vw solid #E51E28;
-    backdrop-filter: blur(25px); 
+    border-bottom: 1px solid rgba(0, 0, 0,0.2);
+    border-right: 1px solid rgba(0, 0, 0,0.2);
+    border-top: 1px solid rgba(0, 0, 0,0.2);
+    backdrop-filter: blur(4px); 
     color:white; 
     transition:500ms ease-in-out;
   
@@ -127,13 +146,13 @@ a{
 
 
 .data1:hover{
-    border: 1px solid rgba(255, 255, 255,0.5);
+    border: 1px solid #E51E28;
     border-left:.6vw solid #E51E28;
 }
 
 
-.data1 h4{
-    font-weight:200; 
+.oneproducts:hover{
+    border: 1px solid #E51E28;
 }
 
 .data1 h3{
@@ -184,6 +203,7 @@ a{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     object-fit: cover;
     overflow: hidden;
+    border: 1px solid #ffffff;
 }
 
 .products{
@@ -302,6 +322,13 @@ a{
 }
 
 .footer1{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-image: url(./images/last.png);
     margin-top: 3vw;
+    padding-bottom:3vw;
+    background-size: cover;
 }
+.data1 h4{
+    font-weight:200; 
+    color:black;
+}
+

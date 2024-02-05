@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Hover Popup</title>
+  <style>
+    /* Style for the popup */
+    .popup {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      z-index: 1;
+    }
+
+    /* Style for the icons */
+    .icon {
+      font-size: 24px;
+      margin: 10px;
+      cursor: pointer;
+      position: relative; /* Ensure the parent position is relative for absolute positioning */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Icon 1 -->
+<span class="icon" onmouseover="showPopup('popup1', event)" onmouseout="hidePopup('popup1')">Icon 1</span>
+<div id="popup1" class="popup">Popup Content 1</div>
+
+<!-- Icon 2 -->
+<span class="icon" onmouseover="showPopup('popup2', event)" onmouseout="hidePopup('popup2')">Icon 2</span>
+<div id="popup2" class="popup">Popup Content 2</div>
+
+<!-- Icon 3 -->
+<span class="icon" onmouseover="showPopup('popup3', event)" onmouseout="hidePopup('popup3')">Icon 3</span>
+<div id="popup3" class="popup">Popup Content 3</div>
+
+<script>
+  // Function to show the popup
+  function showPopup(popupId, event) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = 'block';
+    
+    // Calculate the position based on the icon's position
+    var iconRect = event.target.getBoundingClientRect();
+    popup.style.top = iconRect.bottom + 'px';
+    popup.style.left = iconRect.left + 'px';
+  }
+
+  // Function to hide the popup
+  function hidePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    popup.style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Chemford</title>
-
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
 
 </head>
+
 <body>
 
     <!-- Navbar -->
@@ -29,31 +28,45 @@
 
             <div class="navlinks flex">
 
-                <a href=""><h4>Home</h4></a>
+                <a href="">
+                    <h4>Home</h4>
+                </a>
 
-                <a href=""><h4>About Us</h4></a>
+                <a href="#about">
+                    <h4>About Us</h4>
+                </a>
+                <a href="#product">
+                    <h4>Products</h4>
+                </a>
 
-                <a href=""><h4>Contact Us</h4></a>
+                <a href="#contact">
+                    <h4>Contact Us</h4>
+                </a>
 
-                <a href=""><h4>Products</h4></a>
+              
 
             </div>
 
             <div class="navlogos flex">
 
-            <div class="navlogo flex">
-                <i class="ri-whatsapp-line"></i>
-            </div>
+                <div class="navlogo flex" onmouseover="showPopup('popup1', event)" onmouseout="hidePopup('popup1')">
+                    <i class="ri-whatsapp-line"></i>
 
-            
-            <div class="navlogo flex">
-                <i class="ri-phone-line"></i>
-            </div>
+                </div>
+                <div id="popup1" class="popup">+91 9745334545</div>
 
-            
-            <div class="navlogo flex">
-                <i class="ri-mail-send-line"></i>
-            </div>
+
+                <div class="navlogo flex" onmouseover="showPopup('popup2', event)" onmouseout="hidePopup('popup2')">
+
+                    <i class="ri-mail-send-line"></i>
+                </div>
+
+                <div id="popup2" class="popup">sales@chemford.in</div>
+
+                <div class="navlogo flex" onmouseover="showPopup('popup3', event)" onmouseout="hidePopup('popup3')">
+                    <i class="ri-phone-line"></i>
+                </div>
+                <div id="popup3" class="popup">+91 9745334545</div>
 
             </div>
 
@@ -70,47 +83,19 @@
 
 
 
-    
+
     <!-- hero section -->
 
 
     <div class="hero1 flex">
         <div class="container hero flex">
-            <div class="heading-section">
+            <div data-aos="zoom-in" data-aos-duration="1500"  class="heading-section">
                 <h1>ADVANCED <span class="red_color"> MEDICINE</span></h1>
                 <h1>TRUSTED</h1>
                 <h1><span class="red_color">CARE</span></h1>
             </div>
 
 
-          <div class="address flex">
-
-
-            <div class="data1 flex">                   
-
-                    <h4>Reg. Office</h4>
-                    <h3>Cheford life Science Pvt.Ltd.</h3>
-                    <h4>  Golden Square, Davanam Sarovar</h4>
-                    <h4>  Hosur Main Road,Bangalore - 560068</h4>
-
-            </div>
-
-            <div class="data1 flex">
-                <h4>Corporate Office</h4>
-                <h3>Cheford life Science Pvt.Ltd.</h3>
-                <h4>No. 35, 1st Floor, Raza Hyder Street</h4>
-                <h4>Mount Road, Chennai - 600002</h4>
-            </div>
-
-            <div class="data1 flex">
-                <h4>International Head Quarters</h4>
-                <h3>Cheford life Science Pvt.Ltd.</h3>
-                <h4>26, Hohn Perin Place, Harrow</h4>
-                <h4>Middlesex, HA3 9UP, United Kingdom</h4>
-            </div>
-
-
-          </div>
 
 
         </div>
@@ -128,25 +113,33 @@
 
 
 
-    
+
     <!-- About Section -->
 
-    <div class="container">
+    <div class="container" id="about">
 
         <div class="second_head flex">
             <h2>About <span class="red_color">Us</span></h2>
         </div>
 
 
-        <div class="aboutimage flex">
+        <div data-aos="zoom-in" data-aos-duration="1500" class="aboutimage flex">
             <img src="./images/about.jpg" alt="">
         </div>
 
 
         <div class="para">
             <h4>
-                We are a company committed to the cause of health. Acting with ethics and responsibility is weaved into the very fabric of who we are. Good health is vital to all of us, and finding sustainable solutions to the most pressing health care challenges of our world cannot wait. That's why we at CHEMFORD are committed to applying science and our global resources to improve health and well-being at every stage of life. We strive to provide access to safe, effective and affordable medicines and related health care services to the people who need them. We at CHEMFORD For patients and physicians, we provide medicines for some of the world's most serious diseases. For the people who pay for healthcare, we work to make sure that our medicines offer real value for money. For our employees, we provide a culture in which they can feel appreciated, energized and rewarded for their contribution. Our vision is to make a difference in the lives of people globally through our innovative medicines. We aspire to be the best healthcare company in the world and are dedicated to providing leading innovations and solutions for tomorrow.
-            </h4>
+                We at CHEMFORD are committed to applying science and our global resources to improve health and
+                well-being at every stage of life. We strive to provide access to safe, effective and affordable
+                medicines and related health care services to the people who need them. We at CHEMFORD For patients and
+                physicians, we provide medicines for some of the world's most serious diseases. For the people who pay
+                for healthcare, we work to make sure that our medicines offer real value for money. For our employees.
+            </h4> <br>
+
+            <h4>Our vision is to make a difference in the lives of people globally through our innovative medicines. We
+                aspire to be the best healthcare company in the world and are dedicated to providing leading innovations
+                and solutions for tomorrow.</h4>
         </div>
 
 
@@ -163,555 +156,629 @@
 
 
     <!-- Our Responsibility -->
-<div class="container">
-
-  
+    <div class="container">
 
 
-       <div class="res flex">
-
-          <div class="res_left">
-
-            <div class="second_head res-head">
-                <h2>Our</h2>
-                <h2>Responsibility</h2>
-            </div>
-              
-
-          </div>
 
 
-          <div class="res_right">
+        <div data-aos="fade-left" data-aos-duration="1500" class="res flex">
 
-            <div class="res_right1 flex">
+            <div data-aos="fade-left"  class="res_left">
 
-                <i class="ri-verified-badge-fill"></i>
-                <h3>Sustainability</h3>
+                <div class="second_head res-head">
+                    <h2>Our</h2>
+                    <h2>Responsibility</h2>
+                </div>
 
-            </div>
-
-            <div class="res_right2 flex">
-
-                <i class="ri-verified-badge-fill"></i>
-                <h3>Transparency</h3>
-
-            </div>
-
-            <div class="res_right2 flex">
-
-                <i class="ri-verified-badge-fill"></i>
-                <h3>Judicious Use of Antibiotics</h3>
-
-            </div>
-
-            <div class="res_right2 flex">
-
-                <i class="ri-verified-badge-fill"></i>
-                <h3>Workplace Responsibility</h3>
 
             </div>
 
 
+            <div class="res_right">
 
+                <div class="res_right1 flex">
 
-          </div>
+                    <i class="ri-verified-badge-fill"></i>
+                    <h3>Sustainability</h3>
 
+                </div>
 
+                <div class="res_right2 flex">
 
-       </div>
+                    <i class="ri-verified-badge-fill"></i>
+                    <h3>Transparency</h3>
 
-</div>
+                </div>
 
+                <div class="res_right2 flex">
 
-<div class="container">
+                    <i class="ri-verified-badge-fill"></i>
+                    <h3>Judicious Use of Antibiotics</h3>
 
-  
+                </div>
 
+                <div class="res_right2 flex">
 
-    <div class="res res2 flex">
+                    <i class="ri-verified-badge-fill"></i>
+                    <h3>Workplace Responsibility</h3>
 
-       <div class="res_left">
-
-         <div class="second_head res-head">
-             <h2>Health &</h2>
-             <h2>Wellness</h2>
-         </div>
-           
-
-       </div>
-
-
-       <div class="res_right">
-
-         <div class="res_right1 flex">
-
-             <i class="ri-verified-badge-fill"></i>
-             <h3>Medicine Safety  Assessment</h3>
-
-         </div>
-
-        
-
-         <div class="res_right2 flex">
-
-             <i class="ri-verified-badge-fill"></i>
-             <h3>Patient Assistance Programs</h3>
-
-         </div>
-
-        
+                </div>
 
 
 
-       </div>
+
+            </div>
 
 
+
+        </div>
 
     </div>
 
-</div>
 
-  <!-- End Responsibility -->
+    <div class="container">
+
+
+
+
+        <div data-aos="fade-right" data-aos-duration="1500" class="res res2 flex">
+
+            <div data-aos="fade-left" class="res_left">
+
+                <div class="second_head res-head">
+                    <h2>Health &</h2>
+                    <h2>Wellness</h2>
+                </div>
+
+
+            </div>
+
+
+            <div class="res_right">
+
+                <div class="res_right1 flex">
+
+                    <i class="ri-verified-badge-fill"></i>
+                    <h3>Medicine Safety Assessment</h3>
+
+                </div>
+
+
+
+                <div class="res_right2 flex">
+
+                    <i class="ri-verified-badge-fill"></i>
+                    <h3>Patient Assistance Programs</h3>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- End Responsibility -->
 
 
 
     <!-- Product section -->
-    <div class="container">
+    <div class="container" id="product">
 
         <div class="second_head flex">
             <h2>Our <span class="red_color">Products</span></h2>
         </div>
 
 
-<div class="products flex">
+        <div class="products flex">
 
-    <div class="oneproducts">
-       <img src="./images/Rectangle 13.png" alt="">
-
-    </div>
-
-    <div class="oneproducts">
-
-        <img src="./images/Rectangle 14.png" alt="">
-
-    </div>
-
-    <div class="oneproducts">
-        <img src="./images/Rectangle 15.png" alt="">
-
-    </div>
-    <div class="oneproducts">
-        <img src="./images/Rectangle 16.png" alt="">
-
-    </div>
-
-    <div class="oneproducts">
-        <img src="./images/Rectangle 17.png" alt="">
-
-    </div>
-
-</div>
-
-<div class="products products2 flex">
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 18.png" alt="">
-    
-        </div>
-
-
-
-   
-        <div class="oneproducts">
-            <img src="./images/Rectangle 19.png" alt="">
-    
-        </div>
-
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 20.png" alt="">
-    
-        </div>
-
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 21.png" alt="">
-    
-        </div>
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 22.png" alt="">
-    
-        </div>
-
-    </div>
-
-
-
-
-
-    <div class="products products2 flex">
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 23.png" alt="">
-    
-        </div>
-
-
-
-   
-        <div class="oneproducts">
-            <img src="./images/Rectangle 24.png" alt="">
-    
-        </div>
-
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 25.png" alt="">
-    
-        </div>
-
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 26.png" alt="">
-    
-        </div>
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 27.png" alt="">
-    
-        </div>
-
-    </div>
-
-
-
-
-    <div class="products products2 flex">
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 28.png" alt="">
-    
-        </div>
-
-
-
-   
-        <div class="oneproducts">
-            <img src="./images/Rectangle 29.png" alt="">
-    
-        </div>
-
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 30.png" alt="">
-    
-        </div>
-
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 31.png" alt="">
-    
-        </div>
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 32.png" alt="">
-    
-        </div>
-
-    </div>
-
-
-    <div class="products products2 flex">
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 33.png" alt="">
-    
-        </div>
-
-
-
-   
-        <div class="oneproducts">
-            <img src="./images/Rectangle 34.png" alt="">
-    
-        </div>
-
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 35.png" alt="">
-    
-        </div>
-
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 36.png" alt="">
-    
-        </div>
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 37.png" alt="">
-    
-        </div>
-
-    </div>
-
-
-    <div class="products products2 flex">
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 38.png" alt="">
-    
-        </div>
-
-
-
-   
-        <div class="oneproducts">
-            <img src="./images/Rectangle 39.png" alt="">
-    
-        </div>
-
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 40.png" alt="">
-    
-        </div>
-
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 41.png" alt="">
-    
-        </div>
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 42.png" alt="">
-    
-        </div>
-
-    </div>
-
-
-
-    <div class="products products2 flex">
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 43.png" alt="">
-    
-        </div>
-
-
-
-   
-        <div class="oneproducts">
-            <img src="./images/Rectangle 44.png" alt="">
-    
-        </div>
-
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 45.png" alt="">
-    
-        </div>
-
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 46.png" alt="">
-    
-        </div>
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 47.png" alt="">
-    
-        </div>
-
-    </div>
-
-
-
-    <div class="products products2 flex">
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 48.png" alt="">
-    
-        </div>
-
-
-
-   
-        <div class="oneproducts">
-            <img src="./images/Rectangle 49.png" alt="">
-    
-        </div>
-
-
-  
-        <div class="oneproducts">
-            <img src="./images/Rectangle 50.png" alt="">
-    
-        </div>
-
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 51.png" alt="">
-    
-        </div>
-
-        <div class="oneproducts">
-            <img src="./images/Rectangle 52.png" alt="">
-    
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-   <!--End Product section -->
-
-
-
-
-   <!-- Partner -->
-
-   <div class="container partner flex">
-
-
-       <div class="first flex">
-        <div><h2>Our Sister <span class="red_color">Concern</span></h2></div>
-        <div class="first2 flex" >
-
-
-            <div class="logo_div">
-
-                <img src="./images/Rectangle 5.png" alt="">
+            <div class="oneproducts">
+                <img src="./images/Rectangle 13.png" alt="">
 
             </div>
 
-            <div class="logo_div">
-                <img src="./images/Group 3.png" alt="">
+            <div class="oneproducts">
+
+                <img src="./images/Rectangle 14.png" alt="">
 
             </div>
 
-            <div class="logo_div">
-                <img src="./images/Rectangle 7.png" alt="">
+            <div class="oneproducts">
+                <img src="./images/Rectangle 15.png" alt="">
+
+            </div>
+            <div class="oneproducts">
+                <img src="./images/Rectangle 16.png" alt="">
+
+            </div>
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 17.png" alt="">
+
+            </div>
+
+        </div>
+
+        <div class="products products2 flex">
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 18.png" alt="">
+
             </div>
 
 
-        </div></div>
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 19.png" alt="">
+
+            </div>
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 20.png" alt="">
+
+            </div>
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 21.png" alt="">
+
+            </div>
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 22.png" alt="">
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="products products2 flex">
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 23.png" alt="">
+
+            </div>
+
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 24.png" alt="">
+
+            </div>
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 25.png" alt="">
+
+            </div>
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 26.png" alt="">
+
+            </div>
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 27.png" alt="">
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="products products2 flex">
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 28.png" alt="">
+
+            </div>
+
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 29.png" alt="">
+
+            </div>
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 30.png" alt="">
+
+            </div>
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 31.png" alt="">
+
+            </div>
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 32.png" alt="">
+
+            </div>
+
+        </div>
+
+
+        <div class="products products2 flex">
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 33.png" alt="">
+
+            </div>
+
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 34.png" alt="">
+
+            </div>
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 35.png" alt="">
+
+            </div>
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 36.png" alt="">
+
+            </div>
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 37.png" alt="">
+
+            </div>
+
+        </div>
+
+
+        <div class="products products2 flex">
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 38.png" alt="">
+
+            </div>
+
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 39.png" alt="">
+
+            </div>
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 40.png" alt="">
+
+            </div>
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 41.png" alt="">
+
+            </div>
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 42.png" alt="">
+
+            </div>
+
+        </div>
+
+
+
+        <div class="products products2 flex">
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 43.png" alt="">
+
+            </div>
+
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 44.png" alt="">
+
+            </div>
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 45.png" alt="">
+
+            </div>
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 46.png" alt="">
+
+            </div>
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 47.png" alt="">
+
+            </div>
+
+        </div>
+
+
+
+        <div class="products products2 flex">
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 48.png" alt="">
+
+            </div>
+
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 49.png" alt="">
+
+            </div>
+
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 50.png" alt="">
+
+            </div>
+
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 51.png" alt="">
+
+            </div>
+
+            <div class="oneproducts">
+                <img src="./images/Rectangle 52.png" alt="">
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--End Product section -->
+
+
+
+
+    <!-- Partner -->
+
+    <div class="container partner flex">
+
 
         <div class="first flex">
-            <div><h2>Manufacturing <span class="red_color"> Partners</span></h2></div>
-            <div class="first2 flex" >
-    
-    
-                <div class="logo_div">
-    
+            <div>
+                <h2>Our Sister <span class="red_color">Concern</span></h2>
+            </div>
+            <div class="first2 flex">
+
+
+                <div class="logo_div" data-aos="zoom-in" data-aos-duration="1500">
+
+                    <img src="./images/Rectangle 5.png" alt="">
+
+                </div>
+
+                <div class="logo_div" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="./images/Group 3.png" alt="">
+
+                </div>
+
+                <div class="logo_div" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="./images/Rectangle 7.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="first flex">
+            <div>
+                <h2>Manufacturing <span class="red_color"> Partners</span></h2>
+            </div>
+            <div class="first2 flex">
+
+
+                <div class="logo_div" data-aos="zoom-in" data-aos-duration="1500">
+
                     <img src="./images/Rectangle 8.png" alt="">
-    
+
                 </div>
-    
-                <div class="logo_div">
+
+                <div class="logo_div" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="./images/Rectangle 9.png" alt="">
-    
+
                 </div>
-    
-                <div class="logo_div">
+
+                <div class="logo_div" data-aos="zoom-in" data-aos-duration="1500">
                     <img src="./images/Rectangle 10.png" alt="">
                 </div>
-    
-    
-            </div></div>
 
 
-     
-       </div>
+            </div>
+        </div>
 
 
 
+    </div>
 
-   </div>
+
+
+
+    </div>
 
     <!-- End Partner -->
 
 
-    
+
     <!-- Footer -->
 
-    <div class="footer1">
+    <div class="footer1" id="contact">
 
-   <div class="container">
-    
-    <div class="footer flex">
+        <div class="container">
 
-       <div class="left_section">
-           <img src="./images/logo.png" alt="">
-       </div>
+            <div class="footer flex">
 
-       <div class="right_section">
+                <div class="left_section">
+                    <img src="./images/logo.png" alt="">
+                </div>
 
-        <h3>Contact <span class="red_color">Us</span></h3>
-        <div class="gmail flex">
-            <i class="ri-mail-unread-fill"></i>
-            <h4>sales@chemford.in</h4>
+                <div class="right_section">
+
+                    <h3>Contact <span class="red_color">Us</span></h3>
+                    <div class="gmail flex">
+                        <i class="ri-mail-unread-fill"></i>
+                        <h4>sales@chemford.in</h4>
+
+                    </div>
+
+                    <div class="gmail flex">
+                        <i class="ri-phone-fill"></i>
+                        <h4>+91 9745334545</h4>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="address flex">
+
+
+                <div class="data1 flex">
+
+                    <h4>Reg. Office</h4>
+                    <h3>Cheford life Science Pvt.Ltd.</h3>
+                    <h4> Golden Square, Davanam Sarovar</h4>
+                    <h4> Hosur Main Road,Bangalore - 560068</h4>
+
+                </div>
+
+                <div class="data1 flex">
+                    <h4>Corporate Office</h4>
+                    <h3>Cheford life Science Pvt.Ltd.</h3>
+                    <h4>No. 35, 1st Floor, Raza Hyder Street</h4>
+                    <h4>Mount Road, Chennai - 600002</h4>
+                </div>
+
+                <div class="data1 flex">
+                    <h4>International Head Quarters</h4>
+                    <h3>Cheford life Science Pvt.Ltd.</h3>
+                    <h4>26, Hohn Perin Place, Harrow</h4>
+                    <h4>Middlesex, HA3 9UP, United Kingdom</h4>
+                </div>
+
+
+            </div>
+
 
         </div>
-
-        <div class="gmail flex">
-            <i class="ri-phone-fill"></i>
-            <h4>+91 9745334545</h4>
-
-        </div>
-        
-        
-       </div>
-
-
-
 
     </div>
-    
 
-   </div>
 
-</div>
+
+   
+
+
+        <div class="address_footer">
+
+            
+        
+
+        </div>
+
+
+
+  
 
 
     <!-- End Footer -->
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // Function to show the popup
+        function showPopup(popupId, event) {
+            var popup = document.getElementById(popupId);
+            popup.style.display = 'block';
+
+            // Calculate the position based on the icon's position
+            var iconRect = event.target.getBoundingClientRect();
+            popup.style.top = iconRect.bottom + 'px';
+            popup.style.left = iconRect.left + 'px';
+        }
+
+        // Function to hide the popup
+        function hidePopup(popupId) {
+            var popup = document.getElementById(popupId);
+            popup.style.display = 'none';
+        }
+    </script>
+
 </body>
+
 </html>
