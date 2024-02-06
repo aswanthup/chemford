@@ -214,6 +214,11 @@ a{
     margin-top:2vw;
 }
 
+.oneproducts img{
+    width:16vw; 
+}
+
+
 
 /*End Product */
 
@@ -237,6 +242,10 @@ a{
 
   border-radius:.5vw;
 }
+
+
+
+
 
 .first{
     justify-content: space-between;
