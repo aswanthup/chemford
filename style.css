@@ -714,6 +714,18 @@ header{
     font-size:12px;
    }
 
+   .oneproducts{
+    width:28vw;
+   }
+
+   .oneproducts img{
+    width:28vw;
+   }
+
+   .mobile_product{
+    margin-top:3vw;
+   }
+
 }
 
 
