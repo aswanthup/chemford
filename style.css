@@ -60,7 +60,7 @@ a{
 
 
 .navlogo{
-    background-color:#E51E28;
+    background-color:#C0211F;
     height:2.5vw;
     width:2.5vw;
     border-radius:50px;
@@ -87,7 +87,7 @@ a{
 }
 
 .red_color{
-    color:#E51E28 ;
+    color:#C0211F ;
 } 
 
 .flex{
@@ -197,7 +197,7 @@ header{
 }
 .icon2{
     background: var(--color-primary);
-    color:red;
+    color:#C0211F;
     border-radius: 50px;
     width:40px;
     height: 40px;
@@ -283,7 +283,7 @@ header{
  gap:.5vw;
   padding:1.5vw;
  
-    border-left:.6vw solid #E51E28;
+    border-left:.6vw solid #C0211F;
     border-bottom: 1px solid rgba(0, 0, 0,0.2);
     border-right: 1px solid rgba(0, 0, 0,0.2);
     border-top: 1px solid rgba(0, 0, 0,0.2);
@@ -295,23 +295,23 @@ header{
 
 
 .data1:hover{
-    border: 1px solid #E51E28;
-    border-left:.6vw solid #E51E28;
+    border: 1px solid #C0211F;
+    border-left:.6vw solid #C0211F;
 }
 
 
 .oneproducts:hover{
-    border: 1px solid #E51E28;
+    border: 1px solid #C0211F;
 }
 
 .data1 h3{
     font-weight:600; 
-    color: #E51E28;
+    color: #C0211F;
     letter-spacing:2px;
 }
 
 .location{
-    color: #E51E28;
+    color: #C0211F;
     font-weight:700;
 }
 
@@ -472,7 +472,7 @@ header{
 }
 
 .gmail i{
-    color: #E51E28;
+    color: #C0211F
 }
 
 .right_section{
@@ -513,7 +513,7 @@ header{
         top:-75%;
         right:7%;
         width: 150px;
-        background:red;
+        background:#C0211F;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -644,7 +644,7 @@ header{
 
 
      .mobile_footer{
-        background-color:red;
+        background-color:#C0211F;
         margin-top: 5vw;
         flex-direction: column;
         align-items: center;
@@ -742,6 +742,10 @@ header{
 
     header{
         padding:1vw;
+    }
+
+    .para h4{
+        line-height:6vw;
     }
 
 }
