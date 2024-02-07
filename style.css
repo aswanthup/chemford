@@ -45,6 +45,19 @@ a{
         font-size:2rem;
     }
 
+    .navlogo{
+        background-color:#C0211F;
+        height:2.5vw;
+        width:2.5vw;
+        border-radius:50px;
+        justify-content: center;
+        align-items:center;
+        margin:10px;
+        cursor: pointer;
+        position: relative; 
+    }
+    
+
     .popup {
         display: none;
         position: absolute;
@@ -53,23 +66,14 @@ a{
         border: 1px solid #ccc;
         border-radius: 5px;
         z-index: 9999;
+      
+       
       }
 
 
 
 
 
-.navlogo{
-    background-color:#C0211F;
-    height:2.5vw;
-    width:2.5vw;
-    border-radius:50px;
-    justify-content: center;
-    align-items:center;
-    margin:10px;
-    cursor: pointer;
-    position: relative; 
-}
 
 .navlogo i{
     font-size:20px;
