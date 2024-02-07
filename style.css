@@ -65,17 +65,11 @@ a{
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
-     
+        z-index: 9999;
     
       }
-      /* #popup3{
-        position: absolute;
-        background-color: #ac1b1b;
-        right:-300;
-      } */
-.navbar{
-    z-index: 9999;
-}
+   
+
 
 
 
@@ -231,6 +225,7 @@ header{
 
 .navbar{
     display: flex;
+    z-index: 9999;
     justify-content: center;
     align-items: center;
 }
@@ -510,10 +505,6 @@ header{
 
 }
 
-.mobile{
-    display: none;
-}
-
 @media screen and (max-width: 1024px){
     #menu-icon{
         display: block;
@@ -557,13 +548,8 @@ header{
 }
 
 @media screen and (max-width: 940px){
- 
-.navbar{
-    display: none;
-}
-.navbar2{
-    display:block;
-}
+
+
     .mobile_nav_logo img{
 
         width:15vw;
