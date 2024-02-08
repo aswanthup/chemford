@@ -88,10 +88,15 @@
 
 
             <ul class="navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+               <div class="nav_home"> <li> <a href="#home">Home</a></li></div>
+               <div class="nav_home"><li> <a href="#about">About Us</a> </li></div>
+               <div class="nav_home2"><li> <a href="#about2">About Us</a> </li></div>
+               <div class="nav_home"><li> <a href="#product">Product</a></li></div>
+               <div class="nav_home2"><li> <a href="#product2">Product</a></li></div>
+               <div class="nav_home"> <li> <a href="#contact">Contact Us</a></li></div>
+               <div class="nav_home2"> <li> <a href="#contact2">Contact Us</a></li></div>
+
+
             </ul>
 
 
@@ -150,7 +155,7 @@
                 <div data-aos="zoom-in" data-aos-duration="1500" class="heading-section">
                     <h1>ADVANCED <span class="red_color"> MEDICINE</span></h1>
                     <h1>TRUSTED</h1>
-                    <h1><span class="red_color"></span></h1>
+                    <h1><span class="red_color">CARE</span></h1>
                 </div>
 
 
@@ -808,14 +813,17 @@
 
         <!-- Hero -->
 
-        <div class="hero1 flex">
+        <div class="hero1 flex" id="home">
             <div class="container hero flex">
-                <!-- <div data-aos="zoom-in" data-aos-duration="1500"  class="heading-section">
-                <h1>ADVANCED </h1>
-                <h1><span class="red_color"> MEDICINE</span></h1>
-                <h1>TRUSTED</h1>
-                <h1><span class="red_color">CARE</span></h1>
-            </div> -->
+                <div data-aos="zoom-in" data-aos-duration="1500" class="heading-section">
+                    <h1>ADVANCED <span class="red_color"> MEDICINE</span></h1>
+                    <h1>TRUSTED</h1>
+                    <h1><span class="red_color">CARE</span></h1>
+                </div>
+
+
+
+
             </div>
         </div>
 
@@ -983,7 +991,7 @@
 
 
         <!-- Products -->
-        <div class="second_head flex">
+        <div class="second_head flex" id="product2">
             <h2>Our <span class="red_color">Products</span></h2>
         </div>
 
@@ -1196,7 +1204,7 @@
         <!--End Partner -->
 
 
-        <div class="mobile_footer flex" id="contact">
+        <div class="mobile_footer flex" id="contact2">
 
             <div class="second_head flex">
                 <h2>Contact <span class="white_color">Us</span></h2>
@@ -1287,9 +1295,29 @@
         });
 
     </script>
-    <script>
-        let att = "98878787"
-    </script>
+    <!-- <script>
+        function updateHref(link,f,g) {
+            console.log(link)
+            console.log(f)
+            console.log(g)
+            var clickedLink = document.getElementById(link);
+     
+
+            if (window.innerWidth <= 940) {
+                clickedLink.setAttribute('href', g);
+            } else{
+
+                clickedLink.setAttribute('href', f);
+            }
+            console.log(clickedLink.getAttribute('href'))
+        }
+
+        aboutLink.addEventListener('click', updateHref("aboutLink",'#about','#about2'))
+        homeLink.addEventListener('click', updateHref("homeLink",'#home','#home2'))
+        productLink.addEventListener('click', updateHref("productLink",'#product','#product2'))
+   
+
+    </script> -->
 
 </body>
 

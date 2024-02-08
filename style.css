@@ -295,6 +295,9 @@ header{
     backdrop-filter: blur(4px); 
     color:white; 
     transition:500ms ease-in-out;
+
+
+
   
 }
 
@@ -505,7 +508,32 @@ header{
 
 }
 
+
+
+.nav_home{
+    display: block;
+  }
+
+  .nav_home2{
+    display: none;
+  }
+
+
+@media screen and (max-width: 1420px){
+    .data1{
+        height:20vw;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .data1{
+        height:25vw;
+    }
+}
 @media screen and (max-width: 1024px){
+    .data1{
+        height:30vw;
+    }
     #menu-icon{
         display: block;
     }
@@ -549,6 +577,18 @@ header{
 
 @media screen and (max-width: 940px){
 
+
+  .nav_home{
+    display: none;
+  }
+
+  .nav_home2{
+    display: block;
+  }
+
+    .data1{
+        height: auto;
+    }
 
     .mobile_nav_logo img{
 
